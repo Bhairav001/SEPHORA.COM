@@ -338,8 +338,48 @@ sup{
 
 /* -------------------M-fourth--------------------------- */
 
-
-
+.M-social{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.M-social a{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.M-social-img{
+    width: 32px;
+    height: 32px;
+    max-width: 100%;
+}
+.M-legal{
+    font-size: 13px;
+}
+.M-legal1{
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+.M-legal2{
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.M-legal3{
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+.M-policy{
+    padding: 8px;
+    display: inline-block;
+    cursor: pointer;
+}
+.M-policy-btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
 
 a{
     color: white;
@@ -427,6 +467,12 @@ li:hover{
     .M-fourth{
         display: flex;
         align-items: flex-start;
+    }
+    .M-legal{
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        order: -1;
     }
 }
 
