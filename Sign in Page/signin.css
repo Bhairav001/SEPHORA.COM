@@ -1,0 +1,90 @@
+#container{
+    width: 33%;
+    height: 70%;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  #img1{
+      width: 20px;
+      height: 30px;
+      margin-top: 12px;
+      margin-right: 5px;
+  }
+  #gift_tag{
+      display: flex;
+  }
+  input{
+      padding: 12px;
+      font-size: 15px;
+      border-radius: 5px;
+      margin:10px 10px ;
+      border: 1px solid #cccccc;
+  }
+  #full_name{
+      display: flex;
+      width: 92%;
+  }
+  #email,#password,#phone_number,#zip_code{
+      width: 81%;
+  }
+  #first_name,#last_name,select{
+      width: 41%;
+      padding: 12px;
+      font-size: 15px;
+      border-radius: 5px;
+      margin:10px 10px ;
+      border: 1px solid #cccccc;
+  }
+  #heading{
+      font-size: 30px;
+  }
+  #creat{
+      text-align: center;
+      margin-top: 0px;
+  }
+  #signin{
+      width: 100%;
+      display: flex;
+  }
+  #forgot_passord{
+     margin-left: 120px;
+     margin-top: 12px;
+  }
+  #checkbox{
+      width: 20px;
+      height: 30px;
+      margin-top: 12px;
+      margin-right: 10px;
+      border: 2px solid grey;
+  }
+  #submit{
+      padding: 14px;
+      border-radius: 50px;
+      width: 200px;
+      background-color: black;
+      color: white;
+  }
+  #create_account{
+    padding: 14px;
+    border-radius: 50px;
+    width: 200px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    margin-left: 10px;
+  }
+  #submit:hover{
+      background-color: gray;
+  }
+  .privacy{
+      font-size: 13px;
+      color: gray;
+      line-height: 17px;
+      text-align: center;
+  }
+  a{
+      color: blue;
+  }
