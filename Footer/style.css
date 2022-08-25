@@ -1,21 +1,20 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
     text-decoration: none;
-    box-sizing: border-box;
     border-width: 0;
     border-style: solid;
     border-color: currentColor;
+    box-sizing: border-box;
 }
 
 #M-footer{
-    margin: 48px 0px 0px;
-    padding: 0px 0px 96px;
     line-height: 1.25;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
 }
-
 .M-head{
     display: flex;
     justify-content: center;
@@ -37,7 +36,6 @@
 .M-btn:hover{
     text-decoration: underline;
 }
-
 .M-section{
     width: 100%;
     max-width: 1280px;
@@ -53,7 +51,6 @@
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    font-size: 12px;
 }
 .M-common img{
     flex-shrink: 0;
@@ -67,13 +64,11 @@
 }
 .M-span1{
     font-weight: 700;
-    font-size: 13px;
 }
 .M-span1:hover{
     text-decoration: underline;
 }
 .M-span2{
-    font-size: 13px;
     white-space: pre-wrap;
     overflow-wrap: break-word;
 }
@@ -81,7 +76,6 @@
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    font-size: 13px;
     cursor: default;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
@@ -106,7 +100,6 @@
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    font-size: 12px;
 }
 .M-link img{
     flex-shrink: 0;
@@ -120,7 +113,6 @@
 }
 .link-target{
     font-weight: 700;
-    font-size: 13px;
 }
 .link-target:hover{
     text-decoration: underline;
@@ -135,7 +127,6 @@
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    font-size: 12px;
 }
 .M-link2 img{
     flex-shrink: 0;
@@ -185,7 +176,7 @@ sup{
 }
 .M-h2{
     font-weight: 700;
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 0px;
 }
 .fa-plus{
@@ -204,13 +195,12 @@ sup{
 .M-li1-link{
     cursor: pointer;
     display: block;
-    font-size: 13px;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
 .M-c-h2{
     font-weight: 700;
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 8px;
 }
 .M-R-btn{
@@ -220,7 +210,6 @@ sup{
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    font-size: 12px;
     position: relative;
     cursor: pointer;
     color: rgb(255, 255, 255);
@@ -233,9 +222,6 @@ sup{
     margin-right: 12px;
     display: inline-block;
     flex-shrink: 0;
-}
-.M-R-btn span{
-    font-size: 13px;
 }
 .fa-check{
     width: 1em;
@@ -259,10 +245,10 @@ sup{
     overflow-wrap: break-word;
 }
 .M-label{
-    display: block;
     margin-bottom: 12px;
+    display: block;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
 }
 .M-form{
     display: flex;
@@ -276,64 +262,68 @@ sup{
 .M-input1{
     display: flex;
     height: 44px;
-    background-color: rgb(255, 255, 255);
     border-width: 1px;
-    border-color: rgb(255, 255, 255);
     border-radius: 4px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 .M-input2{
+    position: relative;
     margin: -1px;
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0%;
-    position: relative;
 }
 .M-input3{
-    margin: 1px;
     padding-left: 16px;
     padding-right: 12px;
+    margin: 1px;
     display: flex;
-    -webkit-box-align: center;
-    align-items: center;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0%;
-    font-family: inherit;
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-    background-color: transparent;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 14px;
     border-width: 0px;
     box-shadow: none;
     appearance: none;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
 }
 .M-btn4{
-    min-width: 5.5em;
+    min-width: 6.4em;
     min-height: 44px;
     padding: 0.25em 1.125em;
     margin-left: 16px;
-    font-size: 14px;
-    font-weight: 700;
-    border-width: 2px;
     display: inline-flex;
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
-    line-height: 1;
-    background-color: transparent;
     text-align: center;
-    text-decoration: none;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 700;
+    border-width: 2px;
     border-radius: 99999px;
     appearance: none;
-    border-color: currentcolor;
-    transition: color 0.2s ease 0s, border-color 0.2s ease 0s;
     color: inherit;
+    border-color: currentcolor;
+    background-color: transparent;
+    transition: color 0.2s ease 0s, border-color 0.2s ease 0s;
     cursor: pointer;
 }
 .M-btn4:hover{
     border-color: rgb(102, 102, 102);
     color: rgb(102, 102, 102);
+}
+.M-greet{
+    color: inherit;
+    margin-top: 8px;
+    line-height: 1.25;
+    display: none;
 }
 
 /* -------------------M-fourth--------------------------- */
@@ -354,9 +344,6 @@ sup{
     height: 32px;
     max-width: 100%;
 }
-.M-legal{
-    font-size: 13px;
-}
 .M-legal1{
     white-space: pre-wrap;
     overflow-wrap: break-word;
@@ -366,6 +353,7 @@ sup{
     overflow-wrap: break-word;
     margin-left: -8px;
     margin-right: -8px;
+    display: flex;
 }
 .M-legal3{
     white-space: pre-wrap;
@@ -377,9 +365,26 @@ sup{
     cursor: pointer;
 }
 .M-policy-btn{
+    cursor: pointer;
+    padding: 8px;
+    display: inline-block;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
 }
+.M-S-h2{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.M-S-div{
+    display: flex;
+    margin-top: 16px;
+}
+.M-S-div a + a{
+    margin-left: 16px;
+}
+
+/* ---------------------common--------------------- */
 
 a{
     color: white;
@@ -394,11 +399,13 @@ li{
 li:hover{
     text-decoration: underline;
 }
-
+div{
+    display: block;
+}
 
 /* ------------------------media-queries---------------- */
 
-@media all and (min-width: 992px){
+@media (min-width: 992px){
     #M-footer{
         padding-bottom: 96px;
     }
@@ -451,8 +458,8 @@ li:hover{
         left: -18px;
     }
     .M-Details{
-        width: 32%;
         max-width: none;
+        width: 32%;
         display: flex;
         flex-direction: column;
         padding-bottom: 8px;
@@ -476,9 +483,10 @@ li:hover{
     }
 }
 
-@media (max-width: 992px){
+@media (max-width: 991px){
     #M-footer{
-        margin-top: 48px;
+        margin: 48px 0px 0px;
+        padding-bottom: calc(160px + env(safe-area-inset-bottom));
     }
     .M-section{
         width: 100%;
@@ -522,5 +530,8 @@ li:hover{
     }
     .M-D-p{
         font-size: 24px;
+    }
+    .M-social{
+        margin-top: 32px;
     }
 }
