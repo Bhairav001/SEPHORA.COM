@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Page</title>
+    <title>Document</title>
     <style>
         #navbar{
             display: flex;
@@ -203,7 +203,7 @@
 </html>
 <script>
   
-  var Data = [
+  var mensData = [
     {
       image_url:
         "https://www.sephora.com/productimages/sku/s1869478-main-zoom.jpg?imwidth=135",
@@ -471,7 +471,7 @@
   
     // to call displayData function
     window.addEventListener("load", function(){
-      displayData(Data);
+      displayData(mensData);
     });
 
     // Sort By Price
@@ -481,18 +481,18 @@
       if(selected == "") window.location.reload();
       // Sort Low to High
       if(selected == "LTH"){
-        Data.sort(function(a,b){
+        mensData.sort(function(a,b){
           return a.price - b.price ;
         });
-        displayData(Data);
+        displayData(mensData);
       }
 
       // Sort High to Low
       if(selected == "HTL"){
-        Data.sort(function(a,b){
+        mensData.sort(function(a,b){
           return b.price - a.price ;
         });
-        displayData(Data);
+        displayData(mensData);
       }
     }
 
@@ -505,21 +505,21 @@
       if(selected == "") window.location.reload();
       
       if(selected == "asc"){
-        Data.sort(function(a,b){
+        mensData.sort(function(a,b){
           if(a.name > b.name) return 1;
           if(a.name < b.name) return -1;
           return 0;
         });
-        displayData(Data);
+        displayData(mensData);
       }
 
       if(selected == "dec"){
-        Data.sort(function(a,b){
+        mensData.sort(function(a,b){
           if(a.name > b.name) return -1;
           if(a.name < b.name) return 1;
           return 0;
         });
-        displayData(Data);
+        displayData(mensData);
       }
     }
 
@@ -543,11 +543,11 @@
     // document.querySelector("body").append(container);
     var cartData = JSON.parse(localStorage.getItem("cart")) || [];
 
-   function displayData(Data){
+   function displayData(mensData){
     document.querySelector("#main").innerText = "";
     
 
-      Data.map(function(el){
+      mensData.map(function(el){
         var box = document.createElement("div");
         
         

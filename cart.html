@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- <h1>Cart Data</h1> -->
+    <!-- <div id="container">
+
+    </div> -->
+</body>
+</html>
+<script>
+    // let CartData=JSON.parse(localStorage.getItem("Cart"))||[]
+   
+    // // console.log(CartData)
+    // displayDOM(CartData)
+
+    // function displayDOM(CartData){
+    //     document.getElementById("container").innerHTML=null
+    //     CartData.forEach((el,index)=>{
+    //     let box=document.createElement("div")
+
+    //     let img=document.createElement("img")
+    //     img.src=el.image_url
+
+    //     let name=document.createElement("p")
+    //     name.innerText=el.name
+
+    //     let price=document.createElement("p")
+    //     price.innerText=el.price
+
+    //     let brand=document.createElement("p")
+    //     brand.innerText=el.brand
+
+    //     let removeBtn=document.createElement("button")
+    //     removeBtn.innerText="Remove"
+    //     removeBtn.addEventListener("click",function(el,index){
+    //         removeBtnOne(el,index)
+    //     })
+    //     box.append(img,name,price,brand,removeBtn)
+
+    //     document.getElementById("container").append(box)
+    // })
+    // }
+    
+
+    // function removeBtnOne(el,index){
+    //     // console.log(el)
+    //     // console.log(index)
+    //     // let DataItem=JSON.stringify(localStorage.getItem("All"))
+    //     CartData.splice(index,1)
+    //     // DataItem.push(el)
+    //     window.location.reload()
+    //     displayDOM(CartData)
+    //     // localStorage.setItem("All",JSON.stringify(DataItem))
+    //     localStorage.setItem("Cart",JSON.stringify(CartData))
+
+
+    // }
+
+    var cartData1 = JSON.parse(localStorage.getItem("cart"))||[]
+    var container = document.createElement("div");
+    container.setAttribute("id","container");
+    document.querySelector("body").append(container);
+    // var cartData = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cartData1.map(function(el){
+      
+        var box = document.createElement("div");
+        
+        var img = document.createElement("img");
+        img.src = el.image_url;
+
+        var name = document.createElement("p");
+        name.textContent = el.name;
+
+        var pricebox = document.createElement("div")
+        pricebox.setAttribute("id","pricebox")
+
+        var div1 = document.createElement("div")
+        var price = document.createElement("h3");
+        price.textContent = el.price;
+        div1.append(price);
+        
+        var div2 = document.createElement("div")
+        var striked = document.createElement("strike");
+        striked.textContent = el.strikedoffprice;
+        // striked.style.textDecoration = strike line-through
+        div2.append(striked);
+
+        pricebox.append(div1,div2);
+
+        var btn = document.createElement("button");
+        // btn.setAttribute("id","btn")
+        btn.textContent = "Remove";
+        btn.addEventListener("click", function(){
+            removeItem(el);
+        });
+
+        // box.append(img,name,prices);
+        box.append(img,name,pricebox,btn);
+        document.querySelector("#container").append(box);
+    });
+
+    function removeItem(el,index){
+        console.log(el,index);
+        cartData1.splice(index,1)
+        console.log(cartData1);
+        localStorage.setItem("cart",JSON.stringify(cartData1));
+        window.location.reload();
+    }
+
+</script>
