@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sephora.com</title>
+  <style>
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+#navbar{
+    height: 80px;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+h2{
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 25px;
+}
+#p{
+    margin-left: 15px;
+}
+#navbar>img{
+    width: 130px;
+}
+#search{
+    width: 370px;
+    height: 35px;
+    border-radius: 30px;
+ 
+}
+#store{
+    display: flex;
+    margin-left: 15px;
+}
+#store>img{
+    width: 40px;
+    height: 40px;
+}
+#store>p{
+    margin-left: 10px;
+}
+#community{
+    display: flex;
+    width: 180px;
+    margin-left: 22px;
+}
+#community>img{
+    width: 40px;
+    height: 40px;
+}
+#community>p{
+    margin-left: 10px;
+}
+#signin{
+    width: 100px;
+    display: flex;
+    width: 180px;
+}
+#signin>img{
+    width: 40px;
+    height: 40px;
+    margin-top: 4px;
+}
+#signin>p{
+    margin-left: 10px;
+}
+#comment{
+    height: 50px;
+    width: 50px;
+    /* border: 1px solid red; */
+}
+#comment>img{
+    width: 100%;
+}
+#heart{
+    height: 45px;
+    width: 45px;
+    /* border: 1px solid red; */
+
+}
+#heart>img{
+    width: 100%;
+    /* font: ; */
+}
+#basket{
+    height: 45px;
+    width: 45px;
+    /* border: 1px solid red; */
+}
+#basket>img{
+    width: 100%;
+}
+#prod{
+    display: flex;
+    height:50px;
+    width: 100%;
+    background-color: black;
+    font-size: 14px;
+    padding: 8px;
+    /* justify-content: center;
+    align-items: center;
+    justify-content: space-evenly; */
+}
+#prod>ul{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ justify-content: space-around;
+ width: 100%;
+} 
+  #prod>ul>li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+ #prod>ul>li>a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+} 
+#prod>h4:hover{
+    cursor: pointer;
+} 
+#eco{
+    height: 600px;
+    width: 100%;
+    display: flex;
+}
+#eco>div{
+    height: 100%;
+    width: 48%;
+    /* border: 1px solid teal; */
+    margin: auto;
+   
+}
+#eco>div>img{
+    width: 100%;
+  
+}
+#eco>div{
+    background-color: rgb(27, 163, 226);
+    color: white;
+   
+}
+#eco>div:last-child{
+    background-color: rgb(207, 111, 207);
+    color: black;
+}
+
+
+#eco>div>h2{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+#eco>div>p{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+#eco>div>h3{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+  </style>
+</head>
+<body>
+    <div id="navbar">
+        <img src="https://www.sephora.com/img/ufe/logo.svg" alt="error">
+       
+        <input type="text" id="search" placeholder="Search">
+        <div id="store">
+            <img src="https://www.sephora.com/img/ufe/icons/stores-active.svg" alt="error">
+            <p>Stores & Services</p>
+        </div>
+         <div id="community">
+                <img src="https://www.sephora.com/img/ufe/icons/community-active.svg" alt="error">
+                <p>Community</p>
+            </div>
+            <div id="signin">
+                <img src="https://www.sephora.com/img/ufe/icons/me32.svg" alt="error">
+                <p>Signin</p>
+            </div>
+            <div id="comment"> 
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0J-hO1EIU7LF-p696vSNN0B55j6gs7lSh5Q&usqp=CAU" alt="error">
+            </div>
+            <div id="heart">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrvnfg4mN7idJBqaeQNmsm_tyIwlXrgq9xA&usqp=CAU" alt="error">
+            </div>
+            <div id="basket">
+                <img src="https://preview.pixlr.com/images/800wm/100/1/1001504689.jpg" alt="error">
+            </div>
+    </div>
+    <div id="prod"> 
+        <ul>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Skincare</a></li>
+            <li><a href="#">Hair</a></li>
+            <li><a href="#">Fragrance</a></li>
+            <li><a href="#">Tools & Brushes</a></li>
+            <li><a href="#">Bath & Body</a></li>
+            <li><a href="#">Mini Size</a></li>
+            <li><a href="#">Gifts</a></li>
+            <li><a href="#">Beauty Under $20</a></li>
+            <li><a href="#">Sales & Offers</a></li>
+        </ul>
+    </div>
+    <div id="eco">
+        <div>
+            <img src="https://www.sephora.com/contentimages/homepage/080922/Homepage/APP/2022-08-23-hp-slide-july-clean-planet-positive-new-makeup-us-rwd-slice.jpeg?imwidth=1096" alt="error">
+
+                <h2>Eco-Conscious & So Effective</h2>
+                <p>Exceptional Beauty</p>
+                <h3>SHOP NOW</h3>
+
+        </div> 
+        <div>
+            <img src="https://www.sephora.com/contentimages/homepage/080922/Homepage/RWD/2022-08-18-hp-slide-aug-hair-mbc-us-ca-rwd-slice-NO%20CARETS.jpeg?imwidth=1096" alt="error">
+    
+                <h2>Shine On, Healthy Hair</h2>
+                <p>Get glossy results fast with hardworking hair care</p>
+                <h3>LEARN MORE</h3>
+        </div>     
+    </div>
