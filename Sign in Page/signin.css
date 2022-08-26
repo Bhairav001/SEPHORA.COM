@@ -85,6 +85,11 @@
       line-height: 17px;
       text-align: center;
   }
-  a{
-      color: blue;
+  #forgot_passord{
+    color: blue;
   }
+  #createAccount{
+    color: black;
+    
+  }
+ 

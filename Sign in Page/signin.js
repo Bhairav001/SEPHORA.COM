@@ -1,25 +1,37 @@
-document.querySelector("#submit").addEventListener("submit", getData);
 
-let userLogin = JSON.parse(localStorage.getItem("signupData"));
+let form = document.querySelector("form")
+form.addEventListener("submit", getLoginData);
 
-function getData() {
-  let loginEmail = document.querySelector("#email").value;
-  let loginPassword = document.querySelector("#password").value;
-  let count = 0;
-  for (let i = 0; i < userLogin.length; i++) {
-    if (
-      userLogin[i].userEmail == loginEmail &&
-      userLogin[i].userPassword == loginPassword
-    ) {
-      count++;
-    }
+let LogindataArr = JSON.parse(localStorage.getItem("SignUp_Data")) || [] ;
+console.log(dataArr)
+
+function getLoginData(event){
+  event.preventDefault()
+  let LogindataObj = {
+    userEmail:form.email.value,
+    userPassword:form.password.value,
+   }
+   
+   LogindataArr.push(LogindataObj)
+   LogindataArr.forEach(function(elem){
+     if(LogindataObj.userEmail == "" || LogindataObj.userPassword == "")
+     {
+      alert("Please fill required field for signup.")
+     }
+    
+     else if(LogindataObj.userEmail == elem.userEmail && LogindataObj.userPassword == elem.userPassword ) 
+      {
+      alert("You are succesfully Sign in.")
+      }
+      else   
+      {
+        alert("Please enter correct details")
+       }
+   })
   }
-  if (count === 1) {
-    localStorage.setItem("userLogin", JSON.stringify(loginEmail));
-    window.location.href = "MY_PROFILE.html";
-    alert("You are login sucessfully.");
-  } else {
-    alert("Your credentials are wrong or You don't have any account");
-    window.location.href = "signup.html";
-  }
-}
+
+
+
+
+
+

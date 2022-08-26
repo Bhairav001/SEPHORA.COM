@@ -75,3 +75,13 @@ input{
 a{
     color: blue;
 }
+
+@media screen and (min-width: 300px) and (max-width: 480px){
+    #submit{
+        padding: 10px;
+        border-radius: 50px;
+        width: 50px;
+        background-color: black;
+        color: white;
+    } 
+}
