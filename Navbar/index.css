@@ -218,7 +218,7 @@
     color: rgb(102, 102, 102);
 }
 .M-store-span.open{
-    border-bottom: 3px solid #000;
+    box-shadow: rgb(0, 0, 0) 0px 2px 0px 0px;
 }
 /* ----------------------< Drop down - Store >----------------------------- */
 .M-D-1{
@@ -401,7 +401,7 @@
     align-items: center;
 }
 .M-C-span.open{
-    border-bottom: 3px solid #000;
+    box-shadow: rgb(0, 0, 0) 0px 2px 0px 0px;
 }
 /* ----------------------------< Drop down - Community >---------------------------- */
 .M-C-D{
@@ -419,6 +419,7 @@
 .M-C-D.open{
     visibility: visible;
     opacity: 1;
+    transform: translateY(8px);
 }
 .M-C-D1{
     overflow-y: auto;
@@ -544,26 +545,10 @@
     min-width: 5.5em;
 }
 .M-C-D-btn5{
-    font-size: 12px;
-    padding: 0.25em 0.875em;
-    min-height: 32px;
-    font-weight: 700;
-    border-width: 2px;
-    display: inline-flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    line-height: 1;
-    background-color: transparent;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 99999px;
-    appearance: none;
     color: rgb(0, 0, 0);
+    background-color: #fff;
     border-color: currentcolor;
     transition: color 0.2s ease 0s, border-color 0.2s ease 0s;
-    min-width: 5.5em;
 }
 .M-C-D6{
     border-bottom: 1px solid rgba(0, 0, 0, 0.063);
@@ -632,6 +617,230 @@
     position: static;
     display: block;
 }
+.M-signIn-btn1{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: 1.25;
+    height: 100%;
+    min-width: 12em;
+}
+.M-signIn-btn1-img{
+    border-radius: 99999px;
+    overflow: hidden;
+    object-fit: cover;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    margin-right: 12px;
+    display: inline-block;
+    max-width: 100%;
+    opacity: 0.6;
+}
+.M-signIn-btn1-img.open{
+    border-radius: 99999px;
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px, rgb(0, 0, 0) 0px 0px 0px 2px;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    margin-right: 12px;
+    display: inline-block;
+    max-width: 100%;
+}
+.M-signIn-span1.open{
+    box-shadow: rgb(0, 0, 0) 0px 2px 0px 0px;
+}
+.M-signIn-span2{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    display: block;
+    font-size: 14PX;
+    font-weight: 500;
+}
+/* -------------------------< Drop-down - signIn >------------------------ */
+.M-S-D{
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    width: 343px;
+    transition: all 0.2s ease 0s;
+    left: auto;
+    right: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(8px);
+}
+.M-S-D.open{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(8px);
+}
+.M-S-D1{
+    overflow-y: auto;
+    max-height: 256px;
+    padding-top: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 6px 0px;
+    border-radius: 6px;
+}
+.M-S-D2{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    display: block;
+}
+.M-S-D3{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 12px;
+    line-height: 1.25;
+}
+.M-S-D-img1{
+    border-radius: 99999px;
+    overflow: hidden;
+    object-fit: cover;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    display: inline-block;
+    max-width: 100%;
+}
+.M-S-D-span1{
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 14PX;
+}
+.M-S-D-span2{
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    display: block;
+    font-size: 12px;
+    margin-top: 4px;
+}
+.M-S-D4{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 12px;
+}
+.M-S-D-btn1{
+    font-size: 12px;
+    padding: 0.25em 0.875em;
+    min-height: 32px;
+    font-weight: 700;
+    border-width: 2px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    line-height: 1;
+    border-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 99999px;
+    appearance: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    transition: background-color 0.2s ease 0s;
+    display: flex;
+    width: 100%;
+    min-width: 5.5em;
+}
+.M-S-D-btn2{
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    border-color: currentcolor;
+    transition: color 0.2s ease 0s, border-color 0.2s ease 0s;
+}
+.M-S-D5-C{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.063);
+    border-top-color: rgba(0, 0, 0, 0.063);
+    border-right-color: rgba(0, 0, 0, 0.063);
+    border-left-color: rgba(0, 0, 0, 0.063);
+}
+.M-S-D6{
+    padding-bottom: 16px;
+    line-height: 1.25;
+    overflow-y: auto;
+    display: block;
+}
+.M-S-D-a1-C{
+    cursor: pointer;
+    display: flex;
+    padding: 12px 16px;
+    width: 100%;
+    flex-direction: column;
+}
+.M-S-D7-C{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.M-S-D8-C{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+.M-S-D9-C{
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    margin-top: 0.125em;
+}
+.M-S-D-img2{
+    width: 50px;
+    height: 26px;
+    display: inline-block;
+    max-width: 100%;
+}
+.M-S-D10{
+    margin: -4px 16px 12px;
+    font-size: 12px;
+}
+.M-S-D10:empty{
+    display: none;
+}
+.M-S-D11-C{
+    border-bottom: 8px solid rgb(246, 246, 248);
+    border-top-color: rgb(246, 246, 248);
+    border-right-color: rgb(246, 246, 248);
+    border-left-color: rgb(246, 246, 248);
+}
+.M-S-D-a2-C{
+    cursor: pointer;
+    display: flex;
+    padding: 12px 16px;
+    width: 100%;
+}
+.M-S-D-img3-C{
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    margin-top: 0.25em;
+    display: inline-block;
+    max-width: 100%;
+}
+.M-S-D12-C{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    align-self: center;
+}
+/* --------------------------< END >---------------------------- */
 
 
 /* -------------------common-------------------- */
@@ -698,6 +907,9 @@ ul{
     }
     .M-H-other{
         margin-left: -16px;
+    }
+    .M-S-D3{
+        margin-right: 0px;
     }
 }
 @media screen and (min-width: 768px) {

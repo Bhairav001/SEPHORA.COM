@@ -14,3 +14,13 @@ function drpDwn(){
     div2.classList.toggle("open");
 }
 
+let image = document.querySelector('.M-signIn-btn1-img');
+let p3 = document.querySelector('.M-signIn-span1');
+let div3 = document.querySelector('.M-S-D');
+
+function drpDwn1(){
+    image.classList.toggle("open");
+    p3.classList.toggle("open");
+    div3.classList.toggle("open");
+}
+
