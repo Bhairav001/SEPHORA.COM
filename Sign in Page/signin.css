@@ -92,4 +92,49 @@
     color: black;
     
   }
+  @media screen and (min-width: 300px) and (max-width: 480px){
+    #submit{
+        padding: 10px;
+        border-radius: 50px;
+        width: 100px;
+        background-color: black;
+        color: white
+    } 
+    #create_account{
+        padding: 14px;
+        border-radius: 50px;
+        width: 100px;
+        background-color: transparent;
+        color: black;
+        border: 2px solid black;
+        margin-left: 10px;
+      }
+      #forgot_passord{
+        margin-left: 50px;
+        margin-top: 12px;
+     }
+
+}
+@media screen and (min-width: 481px) and (max-width: 700px){
+    #submit{
+        padding: 10px;
+        border-radius: 50px;
+        width: 130px;
+        background-color: black;
+        color: white
+    } 
+    #create_account{
+        padding: 14px;
+        border-radius: 50px;
+        width: 130px;
+        background-color: transparent;
+        color: black;
+        border: 2px solid black;
+        margin-left: 10px;
+      }
+      #forgot_passord{
+        margin-left: 30px;
+        margin-top: 12px;
+     }
+}
  
