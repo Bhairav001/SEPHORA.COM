@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <div id="main1">
+                <div> 
+                    <img id="girl_img" src="https://community.sephora.com/t5/image/serverpage/avatar-name/default-avatar/avatar-theme/sephora/avatar-collection/sephora/avatar-display-size/profile/version/4" alt=""> 
+                </div>
+                <div>
+                    <h4>Happy morning, Beautiful. 🙌</h4>
+                    <p>Sign in for a more personalized experience</p>
+                </div>
+            </div>
+            <div>
+                <button id="submit"><a id="submit_1" href="./signin.html">Sign In</a></button>
+                <button id="create_account"><a id="submit_2" href="./createAccount.html">Create Account</a></button>
+            </div>
+        </div>
+        <div id="main2" >
+          
+            <div class="sub">
+                <div>
+                    <h4>Beauty Insider Summery</h4>
+                    <p>View activity,savings,benefits</p>
+                </div>
+                <div> 
+                    <img id="sub_img2" src="https://www.sephora.com/img/ufe/bi/logo-bi-stacked.svg" alt="">
+                </div>
+            </div>
+            <div>
+                <h4>Rewards Bazaar</h4>
+                <p>Redeem items,samples,more</p>
+            </div>
+            <div class="sub">
+                <div> <img class="sub_img" src="https://www.sephora.com/img/ufe/icons/subscription.svg" alt=""> </div>
+                <div> 
+                    <h4>Buy it Again</h4>
+                    <p>Reorder from in-store and online purchases</p>
+                </div>
+            </div>
+            <div class="sub">
+                <div> <img class="sub_img" src="https://www.sephora.com/img/ufe/icons/track.svg" alt=""> </div>
+                <div> 
+                    <h4>Orders</h4>
+                    <p>Reorder from in-store and online purchases</p>
+                </div>
+            </div>
+            <div class="sub">
+                <div> <img class="sub_img" src="https://www.sephora.com/img/ufe/icons/auto-replenish.svg" alt=""> </div>
+                <div> 
+                    <h4>Auto-Replenish</h4>
+                    <p>Reorder from in-store and online purchases</p>
+                </div>
+            </div>
+            <div class="sub">
+                <div> <img class="sub_img" src="https://www.sephora.com/img/ufe/icons/heart.svg" alt=""> </div>
+                <div> 
+                    <h4>Loves</h4>
+                    <p>View saved products</p>
+                </div>
+            </div>
+            <div class="sub">
+                <div> <img class="sub_img" src="https://www.sephora.com/img/ufe/icons/account.svg" alt=""> </div>
+                <div> 
+                    <h4>Account Settings</h4>
+                    <p>Payment,contact info, addresses,password</p>
+                </div>
+            </div>
+            <div class="sub">
+                <div> <img class="sub_img" src="https://www.sephora.com/img/ufe/icons/cc-outline.svg" alt=""> </div>
+                <div> 
+                    <h4>Sephora Credit Card Program</h4>
+                    <p>Apply now</p>
+                </div>
+            </div>
+            <div class="sub">
+                <div> <img class="sub_img" src="https://www.sephora.com/img/ufe/icons/flash.svg" alt=""> </div>
+                <div> 
+                    <h4>Flash</h4>
+                    <p>Unlimited 1-2 Day Shipping Subscription</p>
+                </div>
+            </div>
+            <div class="sub">
+                <div> <img class="sub_img" src="https://www.sephora.com/img/ufe/icons/reservations.svg" alt=""> </div>
+                <div> 
+                    <h4>Reservations</h4>
+                    <p>Manage your services,classes,events</p>
+                </div>
+            </div>
+            <div class="sub">
+                <div> <img class="sub_img" src="https://www.sephora.com/img/ufe/icons/traits.svg" alt=""> </div>
+                <div> 
+                    <h4>Beauty Traits & Color iQ</h4>
+                    <p>Complete your beauty traits for personalized recomendations</p>
+                </div>
+            </div>
+            <div class="sub">
+                <div> <img class="sub_img" src="https://www.sephora.com/img/ufe/icons/recommendations.svg" alt=""> </div>
+                <div> 
+                    <h4>Beauty Advisor Recomendations</h4>
+                    <p>Recomendations from your store visits</p>
+                </div>
+            </div>
+            <h4><a id="SignOut" href="">Sign Out</a></h4>
+        </div>
+    </div>
+</body>
+</html>
+<script >
+    
+    let Signout_data = JSON.parse(localStorage.getItem("SignIn")) || []
+    
+    document.querySelector("#SignOut").addEventListener("click" , signOut);
+
+    function signOut(Signout_data){
+
+        Signout_data.splice(1,1)
+
+            localStorage.setItem("SignIn",JSON.stringify(Signout_data))
+      }
+    
+   
+      
+</script>

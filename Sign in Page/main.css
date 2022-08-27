@@ -32,7 +32,7 @@
     margin-right: 20px;
   }
   .sub>div{
-    margin-top: 5px;
+    margin-top: -10px;
     margin-right: 20px;
     line-height: 15px;
   }
@@ -44,10 +44,14 @@
     font-size: 13px;
     margin-top: -15px;
   }
+  h4{
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ 
   #sub_img2{
     width: 80px;
     height: 30px;
-    margin-left: 72px;
+    margin-left: 52px;
     margin-top: 20px;
   }
   
@@ -91,6 +95,7 @@
     color: black;
     border: 2px solid black;
     margin-left: 10px;
+    text-decoration: none;
   }
   #signin{
       width: 50%;
@@ -104,20 +109,24 @@
       border: 2px solid grey;
   }
   #submit{
+      
       padding: 14px;
       border-radius: 50px;
       width: 150px;
       background-color: black;
       color: white;
+      
   }
   #submit:hover{
       background-color: gray;
   }
   #submit_1{
     color: white;
+    text-decoration: none;
   }
   #submit_2{
     color: black;
+    text-decoration: none;
   }
   .privacy{
       font-size: 13px;
