@@ -43,6 +43,43 @@
     border-radius: 6px;
     margin-bottom: 20px;
 }
+@media all and (min-width:480px) and (max-width:720px){
+    .BasketPage{
+        width: 1000px;
+        margin-left:20%;
+    }
+    .BasketPage{
+        grid-template-columns: 1000px;
+        grid-template-rows: 400px 200px;
+        gap: 30px;
+        margin-left:20%;
+    }
+    .BasketPage{
+         grid-template-columns: repeat(3, 290px);
+        grid-template-rows: 200px;
+        column-gap: 65px;
+        /* margin-left:20%; */
+    }
+}
+
+@media all and (min-width:320px) and (max-width:479px){
+    .BasketPage{
+        width: 1000px;
+        margin-left:20%;
+    }
+    .BasketPage{
+        grid-template-columns: 1000px;
+        grid-template-rows: 300px 200px;
+        gap: 25px;
+        margin-left:20%;
+    }
+    .BasketPage{
+         grid-template-columns: repeat(1, 1000px);
+        grid-template-rows: repeat(3, 200px) ;
+        column-gap: 65px;
+        /* margin-left:20%; */
+    }
+}
 
 .second-payment-section-2{
     width: 100%;
