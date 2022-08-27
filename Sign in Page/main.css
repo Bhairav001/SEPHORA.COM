@@ -1,0 +1,152 @@
+#container{
+    width: 30%;
+    height: 70%;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  #girl_img,#img1{
+      width: 50px;
+      height: 50px;
+      margin-right: 5px;
+  }
+  #main1{
+    display: flex;
+    margin-right: 5px;
+  }
+  #main1>div{
+    margin-top: -10px;
+    margin-right: 10px;
+    line-height: 10px;
+  }
+  #main2{
+    height: 500px;
+    overflow-y: scroll;
+    
+  }
+  .sub{
+    display: flex;
+    margin-right: 20px;
+  }
+  .sub>div{
+    margin-top: 5px;
+    margin-right: 20px;
+    line-height: 15px;
+  }
+  .sub_img{
+    margin-top: 20px;
+  }
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-top: -15px;
+  }
+  #sub_img2{
+    width: 80px;
+    height: 30px;
+    margin-left: 72px;
+    margin-top: 20px;
+  }
+  
+  #gift_tag{
+      display: flex;
+  }
+  input{
+      padding: 12px;
+      font-size: 15px;
+      border-radius: 5px;
+      margin:10px 10px ;
+      border: 1px solid #cccccc;
+  }
+  #full_name{
+      display: flex;
+      width: 92%;
+  }
+  #email,#password,#phone_number,#zip_code{
+      width: 81%;
+  }
+  #first_name,#last_name,select{
+      width: 41%;
+      padding: 12px;
+      font-size: 15px;
+      border-radius: 5px;
+      margin:10px 10px ;
+      border: 1px solid #cccccc;
+  }
+  #heading{
+      font-size: 30px;
+  }
+  #creat{
+      text-align: center;
+      margin-top: 0px;
+  }
+  #create_account{
+    padding: 14px;
+    border-radius: 50px;
+    width: 150px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    margin-left: 10px;
+  }
+  #signin{
+      width: 50%;
+      display: flex;
+  }
+  #checkbox{
+      width: 20px;
+      height: 30px;
+      margin-top: 12px;
+      margin-right: 10px;
+      border: 2px solid grey;
+  }
+  #submit{
+      padding: 14px;
+      border-radius: 50px;
+      width: 150px;
+      background-color: black;
+      color: white;
+  }
+  #submit:hover{
+      background-color: gray;
+  }
+  #submit_1{
+    color: white;
+  }
+  #submit_2{
+    color: black;
+  }
+  .privacy{
+      font-size: 13px;
+      color: gray;
+      line-height: 17px;
+      font-family: Arial, Helvetica, sans-serif;
+  
+  }
+ 
+  p{
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  @media screen and (min-width: 300px) and (max-width: 480px){
+      #submit{
+          padding: 10px;
+          border-radius: 50px;
+          width: 100px;
+          background-color: black;
+          color: white
+      } 
+  
+  }
+  @media screen and (min-width: 481px) and (max-width: 700px){
+      #submit{
+          padding: 10px;
+          border-radius: 50px;
+          width: 130px;
+          background-color: black;
+          color: white
+      } 
+  }
