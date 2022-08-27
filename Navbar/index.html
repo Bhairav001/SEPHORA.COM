@@ -56,17 +56,17 @@
                     <div class="M-H-other">
                         <div class="M-F-container M-F-greater-than MF_container">
                             <div class="M-store">
-                                <button id="M-store-btn" class="M-store-btn">
-                                    <img src="https://www.sephora.com/img/ufe/icons/stores.svg" alt="store" class="M-store-img">
+                                <button id="M-store-btn" class="M-store-btn" onmouseover="downList()">
+                                    <img src="https://www.sephora.com/img/ufe/icons/stores.svg" alt="store" class="M-store-img" id="M-store-img">
                                     <span>
                                         Stores & Services
-                                        <span class="M-store-span">Choose Your Store</span>
+                                        <span class="M-store-span" id="M-store-span">Choose Your Store</span>
                                     </span>
                                 </button>
-                                <!-- --------------drop-down menu for store------------ -->
+                                <!-- --------------< Drop-down menu for store >------------ -->
                                 <div>
                                     <div>
-                                        <div class="M-D-1">
+                                        <div class="M-D-1" id="M-D-1">
                                             <div id="stores_drop" class="M-D-2">
                                                 <div class="M-D-3">
                                                     <div class="M-D-4">
@@ -89,7 +89,7 @@
                                                             <span class="M-D-span2">Personalized makeup, skincare, and brow services</span>
                                                         </div>
                                                     </a>
-                                                    <div class="M-D-5"></div>
+                                                    <div class="M-D-line"></div>
                                                     <a href="#" class="M-D-a3">
                                                         <img src="https://www.sephora.com/contentimages/meganav/icons/happening_events_2.jpg" alt="" class="M-D-a3-img">
                                                         <div class="M-D-7">
@@ -97,9 +97,9 @@
                                                             <span class="M-D-span2">Exciting launches, parties, and more!</span>
                                                         </div>
                                                     </a>
-                                                    <div class="M-D-5"></div>
+                                                    <div class="M-D-line"></div>
                                                     <a href="#" class="M-D-a3">
-                                                        <img src="https://www.sephora.com/contentimages/meganav/icons/happening_new.jpg" alt="" class="">
+                                                        <img src="https://www.sephora.com/contentimages/meganav/icons/happening_new.jpg" alt="" class="M-D-a3-img">
                                                         <div class="M-D-7">
                                                             <span class="Link-target">What's New in Store</span>
                                                             <span class="M-D-span2">Explore what's hot in your store</span>
@@ -110,14 +110,104 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- --------------End of drop down menu for store------------ -->
+                                <!-- --------------< End >------------ -->
                             </div>
-                            <div class="M-community">
+                            <div class="M-community" id="M-community" onmouseover="drpDwn()">
                                 <a href="#" class="M-C-a4">
-                                    
+                                    <img src="https://www.sephora.com/img/ufe/icons/community.svg" alt="" class="M-C-a4-img">
+                                    <span class="M-C-span" id="M-C-span">Community</span>
                                 </a>
+                                <!-- ---------------------------< Drop down menu community >--------------- -->
+                                <div>
+                                    <div>
+                                        <div class="M-C-D" id="M-C-D">
+                                            <div id="community_drop" class="M-C-D1">
+                                                <div class="M-C-D2">
+                                                    <div class="M-C-D3">
+                                                        <div class="M-C-D4">
+                                                            <button type="button" class="M-C-D-btn1">
+                                                                <img src="https://community.sephora.com/t5/image/serverpage/avatar-name/default-avatar/avatar-theme/sephora/avatar-collection/sephora/avatar-display-size/profile/version/4" alt="" class="M-C-D-img1">
+                                                                <div>
+                                                                    <div>
+                                                                        <span class="M-C-D-span1">Community Profile</span>
+                                                                    </div>
+                                                                    <span class="Link-target M-C-D-span2">Sign in to see your profile</span>
+                                                                </div>
+                                                            </button>
+                                                            <button title="Notifications" type="button" class="M-C-D-btn2">
+                                                                <i class="fa-solid fa-bell"></i>
+                                                            </button>
+                                                            <button title="Messages" type="button" class="M-C-D-btn3">
+                                                                <i class="fa-solid fa-envelope"></i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="M-C-D5">
+                                                            <button type="button" class="M-C-D-btn4">Sign In</button>
+                                                            <button type="button" class="M-C-D-btn5">Create Account</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="M-C-D6"></div>
+                                                    <a href="#" class="M-C-D-a1">
+                                                        <img src="https://www.sephora.com/contentimages/meganav/icons/community_home.jpg" alt="" class="M-C-D-img2">
+                                                        <div class="M-C-D7">
+                                                            <span class="Link-target">Community Home</span>
+                                                            <span class="M-C-D-span3" >Ask questions, join challenges, and get recommendations from people like you</span>
+                                                        </div>
+                                                    </a>
+                                                    <div class="M-C-D6"></div>
+                                                    <a href="#" class="M-C-D-a1">
+                                                        <img src="https://www.sephora.com/contentimages/meganav/icons/community_groups.jpg"  alt="" class="M-C-D-img2">
+                                                        <div class="M-C-D7">
+                                                            <span class="Link-target">Groups</span>
+                                                            <span class="M-C-D-span3" >Discover topics tailored to your beauty interests</span>
+                                                        </div>
+                                                    </a>
+                                                    <div class="M-C-D6"></div>
+                                                    <a href="#" class="M-C-D-a1">
+                                                        <img src="https://www.sephora.com/contentimages/meganav/icons/community_gallery.jpg"  alt="" class="M-C-D-img2">
+                                                        <div class="M-C-D7">
+                                                            <span class="Link-target">Gallery</span>
+                                                            <span class="M-C-D-span3">Add your photos and get inspired by fellow beauty lovers</span>
+                                                        </div>
+                                                    </a>
+                                                    <div class="M-C-D6"></div>
+                                                    <h3 class="M-C-D-h3" >Featured Groups</h3>
+                                                    <ul class="M-C-D-ul">
+                                                        <li>
+                                                            <a href="#" class="M-C-D-a2">Trending at Sephora</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="M-C-D-a2">Clean Beauty</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="M-C-D-a2">K-Beauty</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="M-C-D6"></div>
+                                                    <h3 class="M-C-D-h3">Featured Threads</h3>
+                                                    <ul class="M-C-D-ul">
+                                                        <li>
+                                                            <a href="#" class="M-C-D-a2">Join our 2022 Summer Vacay Challenge</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="M-C-D-a2">Monthly Faves: Share your Top Products!</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="M-C-D-a2">Tell us your Favorite Black-Owned Beauty Brands</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- -------------------------------< End >------------------------- -->
                             </div>
-                            <div></div>
+                            <div class="M-line"></div>
+                            <div class="M-signIn">
+                                <button id="account_drop_trigger" aria-controls="account_drop" aria-haspopup="true" aria-expanded="false" type="button" class="css-eeqdo4 e65zztl0" data-comp="DropdownTrigger StyledComponent BaseComponent "><img src="/img/ufe/icons/me32.svg" role="presentation" alt="" class="css-pyox5n eanm77i0" data-comp="Avatar Image StyledComponent BaseComponent " style="opacity: 0.6;"><span class="css-0"><span data-at="sign_in_header" class="css-1gqkvvw e65zztl0" data-comp="StyledComponent BaseComponent ">Sign In</span></span></button>
+                                <div><div><div class="css-htadai" style="visibility: hidden; opacity: 0; transform: translateY(8px);"><div id="account_drop" aria-labelledby="account_drop_trigger" class="css-qavqdy eanm77i0" data-comp="StyledComponent BaseComponent "><div class="css-5o51e3 eanm77i0" data-comp="StyledComponent BaseComponent "><div data-comp="AccountGreeting "><div class="css-1ggq7rb eanm77i0" data-comp="StyledComponent BaseComponent "><img src="https://community.sephora.com/t5/image/serverpage/avatar-name/default-avatar/avatar-theme/sephora/avatar-collection/sephora/avatar-display-size/profile/version/4" role="presentation" alt="" class="css-1a5heca eanm77i0" data-comp="Avatar Image StyledComponent BaseComponent "><div><span data-at="person_greeting" class="css-7i38uj eanm77i0" data-comp="GreetingText StyledComponent BaseComponent ">Happy weekend, Beautiful. 🙌</span><span class="css-83qyth eanm77i0" data-comp="StyledComponent BaseComponent ">Sign in for a more personalized experience</span></div></div><div class="css-1o8j61k eanm77i0" data-comp="StyledComponent BaseComponent "><button data-at="sign_in_menu" type="button" class="css-19fi7l3 eanm77i0" data-comp="StyledComponent BaseComponent ">Sign In</button><button data-at="create_account_menu" type="button" class="css-t01bj2 eanm77i0" data-comp="StyledComponent BaseComponent ">Create Account</button></div></div></div><div class="css-1vrpe70 eanm77i0" data-comp="Divider StyledComponent "></div><div class="css-1vd2zw4 eanm77i0" data-comp="StyledComponent BaseComponent "><a href="/profile/BeautyInsider" class="css-1ynff3r eanm77i0" data-comp="StyledComponent BaseComponent "><div class="css-70qvj9"><div class="css-1rr4qq7"><div class="Link-target">Beauty Insider Summary</div><div class="css-4ljyie">View activity, savings, benefits</div></div><img data-at="bi_logo" src="/img/ufe/bi/logo-bi-stacked.svg" role="presentation" alt="" class="css-1urdepe eanm77i0" data-comp="Image StyledComponent BaseComponent "></div></a><div class="css-uhc2z6 eanm77i0" data-comp="StyledComponent BaseComponent "></div><div class="css-1vrpe70 eanm77i0" data-comp="Divider StyledComponent "></div><a href="/rewards" class="css-1ynff3r eanm77i0" data-comp="StyledComponent BaseComponent "><div class="css-70qvj9"><div class="css-1rr4qq7" data-at="rb_link_text"><div class="Link-target">Rewards Bazaar</div><div class="css-4ljyie">Redeem items, samples, more</div></div></div></a><div class="css-1tlaoza eanm77i0" data-comp="Divider StyledComponent "></div><a href="/purchase-history" class="css-2d7k20 eanm77i0" data-comp="StyledComponent BaseComponent "><img src="/img/ufe/icons/subscription.svg" role="presentation" alt="" class="css-1cpe0bv eanm77i0" data-comp="Image StyledComponent BaseComponent "><div class="css-1xgaeb3"><div class="Link-target">Buy It Again</div><div class="css-4ljyie">Reorder from in-store and online purchases</div></div></a><div class="css-1vrpe70 eanm77i0" data-comp="Divider StyledComponent "></div><a href="/profile/MyAccount/Orders" class="css-2d7k20 eanm77i0" data-comp="StyledComponent BaseComponent "><img src="/img/ufe/icons/track.svg" role="presentation" alt="" class="css-1cpe0bv eanm77i0" data-comp="Image StyledComponent BaseComponent "><div class="css-1xgaeb3"><div class="Link-target">Orders</div><div class="css-4ljyie">View &amp; track online or pickup orders</div></div></a><div class="css-1vrpe70 eanm77i0" data-comp="Divider StyledComponent "></div><a href="/profile/MyAccount/AutoReplenishment" class="css-2d7k20 eanm77i0" data-comp="StyledComponent BaseComponent "><img src="/img/ufe/icons/auto-replenish.svg" role="presentation" alt="" class="css-1cpe0bv eanm77i0" data-comp="Image StyledComponent BaseComponent "><div class="css-1xgaeb3"><div class="Link-target">Auto-Replenish</div><div class="css-4ljyie">View and manage your subscriptions</div></div></a><div class="css-1vrpe70 eanm77i0" data-comp="Divider StyledComponent "></div><a href="/shopping-list" class="css-2d7k20 eanm77i0" data-comp="StyledComponent BaseComponent "><img src="/img/ufe/icons/heart.svg" role="presentation" alt="" class="css-1cpe0bv eanm77i0" data-comp="Image StyledComponent BaseComponent "><div class="css-1xgaeb3"><div class="Link-target">Loves</div><div class="css-4ljyie">View saved products</div></div></a><div class="css-1vrpe70 eanm77i0" data-comp="Divider StyledComponent "></div><a href="/profile/MyAccount" class="css-2d7k20 eanm77i0" data-comp="StyledComponent BaseComponent "><img src="/img/ufe/icons/account.svg" role="presentation" alt="" class="css-1cpe0bv eanm77i0" data-comp="Image StyledComponent BaseComponent "><div class="css-1xgaeb3"><div class="Link-target">Account Settings</div><div class="css-4ljyie">Payment, contact info, addresses, password</div></div></a><div class="css-1vrpe70 eanm77i0" data-comp="Divider StyledComponent "></div><a href="/profile/CreditCard" class="css-2d7k20 eanm77i0" data-comp="StyledComponent BaseComponent "><img src="/img/ufe/icons/cc-outline.svg" role="presentation" alt="" class="css-1cpe0bv eanm77i0" data-comp="Image StyledComponent BaseComponent "><div class="css-1xgaeb3"><div class="Link-target">Sephora Credit Card Program</div><div class="css-4ljyie">Apply now</div></div></a><div class="css-1tlaoza eanm77i0" data-comp="Divider StyledComponent "></div><a href="/profile/MyAccount/Subscriptions" class="css-2d7k20 eanm77i0" data-comp="StyledComponent BaseComponent "><img src="/img/ufe/icons/flash.svg" role="presentation" alt="" class="css-1cpe0bv eanm77i0" data-comp="Image StyledComponent BaseComponent "><div class="css-1xgaeb3"><div class="Link-target">Flash</div><div class="css-4ljyie">Unlimited 1-2 Day Shipping Subscription</div></div></a><div class="css-1vrpe70 eanm77i0" data-comp="Divider StyledComponent "></div><a href="/happening/reservations" class="css-2d7k20 eanm77i0" data-comp="StyledComponent BaseComponent "><img src="/img/ufe/icons/reservations.svg" role="presentation" alt="" class="css-1cpe0bv eanm77i0" data-comp="Image StyledComponent BaseComponent "><div class="css-1xgaeb3"><div class="Link-target">Reservations</div><div class="css-4ljyie">Manage your services, classes, events</div></div></a><div class="css-1vrpe70 eanm77i0" data-comp="Divider StyledComponent "></div><a href="/profile/me?editprofile=true" class="css-2d7k20 eanm77i0" data-comp="StyledComponent BaseComponent "><img src="/img/ufe/icons/traits.svg" role="presentation" alt="" class="css-1cpe0bv eanm77i0" data-comp="Image StyledComponent BaseComponent "><div class="css-1xgaeb3"><div class="Link-target">Beauty Traits &amp; Color iQ</div><div class="css-4ljyie">Complete your beauty traits for personalized recommendations</div></div></a><div class="css-1vrpe70 eanm77i0" data-comp="Divider StyledComponent "></div><a href="/in-store-services" class="css-2d7k20 eanm77i0" data-comp="StyledComponent BaseComponent "><img src="/img/ufe/icons/recommendations.svg" role="presentation" alt="" class="css-1cpe0bv eanm77i0" data-comp="Image StyledComponent BaseComponent "><div class="css-1xgaeb3"><div class="Link-target">Beauty Advisor Recommendations</div><div class="css-4ljyie">Recommendations from your store visits</div></div></a></div></div></div></div></div>
+                            </div>
                         </div>
                         <div></div>
                         <div></div>
