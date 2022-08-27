@@ -5,31 +5,45 @@ form.addEventListener("submit", getLoginData);
 let LogindataArr = JSON.parse(localStorage.getItem("SignUp_Data")) || [] ;
 console.log(LogindataArr)
 
+let  SignIn_Data = JSON.parse(localStorage.getItem("SignIn")) ;
+
 function getLoginData(event){
   event.preventDefault()
+  if(LogindataArr.length === 0)
+  {
+    alert("No user till now");
+    return;
+  }
   let LogindataObj = {
-    userEmail:form.email.value,
-    userPassword:form.password.value,
+    Email:form.email.value,
+    Password:form.password.value,
    }
    
-   LogindataArr.push(LogindataObj)
-
+  //  LogindataArr.push(LogindataObj)
+   let isSignedin = false;
    LogindataArr.forEach(function(elem){
     
-    if(LogindataObj.userEmail == "" || LogindataObj.userPassword == "")
+    if(elem.userEmail == "" || elem.userPassword == "")
      {
-      return  alert("Please fill required field for signup.")
+        alert("Please fill required field for signup.")
+        return ;
      }
-    
-     else if(LogindataObj.userEmail == elem.userEmail && LogindataObj.userPassword == elem.userPassword ) 
+     
+    else if(elem.userEmail === LogindataObj.Email  &&  elem.userPassword === LogindataObj.Password  ) 
       {
-        return  alert("You are succesfully Sign in.")
+        isSignedin = true;
+         alert("You are succesfully Sign in.")
+         localStorage.setItem("SignIn",JSON.stringify(elem))
+         window.location.href = ""
+         return ;
       }
-      else   
-      {
-        return  alert("Please enter correct details")
-       }
+      
    })
+   if(isSignedin == false)
+   {
+    alert ("user does not exist");
+   }
+   
   }
 
 
