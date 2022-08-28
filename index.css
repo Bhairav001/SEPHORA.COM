@@ -1,0 +1,262 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+        #eco{
+    height: 600px;
+    width: 100%;
+    display: flex;
+}
+#eco>div{
+    height: 100%;
+    width: 48%;
+    /* border: 1px solid teal; */
+    margin: auto;
+   
+}
+#eco>div>img{
+    width: 100%;
+  
+}
+#eco>div{
+    background-color: rgb(27, 163, 226);
+    color: white;
+   
+}
+#eco>div:last-child{
+    background-color: rgb(207, 111, 207);
+    color: black;
+}
+
+
+#eco>div>h2{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+#eco>div>p{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+#eco>div>h3{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#just{
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    text-align: center;
+}
+#just>div{
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+/* border: 1px solid blue; */
+border-radius: 10px;
+height: 300px;
+width: 15%;
+margin: auto;
+}
+#just>div>img{
+width: 100%;
+}
+#just>div>h5{
+margin-bottom: 30px;
+font-size: 12px;
+}
+#just>div>p{
+margin-bottom: 40px;
+font-size: 14px;
+}
+#choose{
+   height: 300px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    text-align: center;
+}
+#choose>div{
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+border-radius: 10px;
+height: 300px;
+width: 15%;
+margin: auto;
+}
+#choose>div>img{
+width: 100%;
+margin-top: 4px;
+}
+#choose>div>h5{
+    font-size: 12px;
+}
+#choose>div>p{
+    font-size: 14px;
+}
+
+
+#beauty{
+    height: auto;
+    width: 100%;
+   
+    display: flex;
+    text-align: center;
+}
+#beauty>div{
+    height:auto;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+    background-color: lightpink;
+    border-radius: 5px;
+}
+#beauty>div>h2{
+    font-size: 24px;
+}
+#beauty>div>p{
+    font-size: 14px;
+}
+#beauty>div>h3{
+    font-size: 14px;
+}
+#beauty>div>img{
+    width: 100%;
+}
+#beauty>div:nth-child(2){
+    background-color: rgb(158, 235, 158);
+}
+#beauty>div:last-child{
+    background-color: rgb(91, 190, 236);
+}
+#gift{
+    height: auto;
+    width: 100%;
+   
+    display: flex;
+    text-align: center;
+}
+#gift>div{
+    height: auto;
+    width: 15%;
+   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    margin: auto;
+}
+#gift>div>img{
+    width: 100%;
+}
+#gift>div>h5{
+    font-size: 12px;
+}
+#gift>div>p{
+    font-size: 14px;
+}
+#sell{
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    text-align: center;
+}
+#sell>div{
+    height: 100%;
+    width: 15%;
+   /* border: 1px solid teal; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    margin: auto;
+}
+#sell>div>img{
+    width: 100%;
+}
+#sell>div>h5{
+    font-size: 12px;
+}
+#sell>div>p{
+    font-size: 14px;
+}
+#feat{
+    height: 170px;
+    width: 90%;
+   
+    margin-left: 120px;
+    display: flex;
+}
+#feat>div{
+    height: 100%;
+    width: 11%;
+    /* border: 1px solid teal; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    margin: auto;
+}
+#feat>div>p{
+    margin-left: 5px;
+    font-size: 14px;
+}
+#feat>div>img{
+    width: 60%;
+    margin-left: 45px;
+   
+}
+#need{
+    height: 170px;
+    width: 90%;
+   
+    margin-left: 120px;
+    display: flex; 
+}
+#need>div{
+    height: 100%;
+    width: 11%;
+   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    margin: auto;  
+}
+#need>div>p{
+    margin-left: 5px;
+    font-size: 14px;
+}
+#need>div>img{
+    width: 60%;
+    margin-left: 45px;
+}
+#nature{
+    height:auto;
+    width: 100%;
+    
+    margin-top: 40px;
+    display: flex;
+}
+#nature>div{
+    height:auto;
+    width: 30%;
+   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+}
+#nature>div>h2{
+    margin-left: 13px;
+    font-size: 24px;
+}
+#nature>div>p{
+    margin-left: 13px;
+    font-size: 14px;
+}
+#nature>div>h4{
+    font-size: 14px;
+    margin-left: 13px;
+}
+#nature>div>img{
+    width: 100%;
+}
+#nature>div:nth-child(2){
+    background-color: rgb(91, 190, 236); 
+}
+#nature>div:last-child{
+    background-color: #e6b470;
+}
