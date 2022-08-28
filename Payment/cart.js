@@ -4,7 +4,7 @@
                 // Calculating total price//
     //==========================================//
 
-    var cartdata=JSON.parse(localStorage.getItem("cartDataObj")) || [];  
+    var cartdata=JSON.parse(localStorage.getItem("cart")) || [];  
 
     var total = cartdata.reduce(function (sum, el) {
         return sum + Number(el.price);
@@ -196,7 +196,7 @@
     function removeItem(el,index){
       console.log(el,index)
         cartdata.splice(index,1)
-        localStorage.setItem("cartDataObj",JSON.stringify(cartdata));
+        localStorage.setItem("cart",JSON.stringify(cartdata));
         window.location.reload();
     }
     

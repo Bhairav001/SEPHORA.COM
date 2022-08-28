@@ -7,22 +7,58 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./Footer/style.css">
+    <link rel="stylesheet" href="./product/product1.css">
+    <!-- <link rel="stylesheet" href="./Sign in Page/signin.css"> -->
+    <link rel="stylesheet" href="./Payment/top_navBar.css">
+  
+    <script src="https://kit.fontawesome.com/cddbab1672.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="navbar">
+    <div id="top_img">
+        <p><strong>Take 50% off++</strong> Oh snap! Get major savings on your favorite beauty. Plus, free shipping on all orders <br> with code <strong> FREESHIP. Shop Now ▸</strong></p>
+        <img src="https://www.sephora.com/contentimages/homepage/081721/Homepage/DesktopMweb/2021-08-29-hp-top-banner-project-kickball-d-us-slice.jpeg?imwidth=612" alt="top_img">
+    </div>
+    <div id="search">
+        <div onclick="home()" id="logo"><img src="https://www.sephora.com/img/ufe/logo.svg" alt=""></div>
+        <div id="box"><input type="text" class="icon" placeholder="Search"></div>
+        <div id="community"> 
+            <div><img src="https://www.sephora.com/img/ufe/icons/stores.svg" alt=""><p><strong>Stores & Services</strong> <br> Choose Your Store</p></div>
+            <div><img src="https://www.sephora.com/img/ufe/icons/community.svg" alt=""><p>Community</p></div>
+            <div  id="signin"><a href="./Sign in Page/signin.html"> <img src="https://www.sephora.com/img/ufe/icons/me-active.svg" alt=""><p>Sign In</p></a></div>
+            
+            <div id="cart">
+                <div><a href="#"><img style="height: 40px; width: 40px;" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/56/left-speech-bubble_1f5e8.png" alt="chat"></a></div>
+                <div><a href="#"><img src="https://cdn-icons-png.flaticon.com/32/1216/1216575.png" alt="heart"></a></div>
+                <div><a href="./product2/cart.html"><img  src="https://cdn-icons-png.flaticon.com/32/481/481383.png" alt="basket"></a></div>
+            </div>
 
+        </div>
+    </div>
+    <div id="black_nav">
+        <div><a href="#"> New</a></div>
+        <div> <a href="#">Brands</a> </div>
+        <div><a href="#"> Makeup</a></div>
+        <div><a href="#"> Skincare</a></div>
+        <div><a href="#"> Hair</a></div>
+        <div><a href="#"> Fragrance</a></div>
+        <div><a href="#"> Tools & Brushes</a></div>
+        <div><a href="#"> Bath & Body</a></div>
+        <div><a href="#"> Mini Size</a></div>
+        <div><a href="#"> Gifts</a></div>
+        <div><a href="#"> Beauty Under $20</a></div>
+        <div><a href="#"> Sale & Offers</a></div>
     </div>
  
     <div id="eco">
-        <div>
-            <img src="https://www.sephora.com/contentimages/homepage/080922/Homepage/APP/2022-08-23-hp-slide-july-clean-planet-positive-new-makeup-us-rwd-slice.jpeg?imwidth=1096" alt="error">
+        <div onclick="Product1()">
+            <img  src="https://www.sephora.com/contentimages/homepage/080922/Homepage/APP/2022-08-23-hp-slide-july-clean-planet-positive-new-makeup-us-rwd-slice.jpeg?imwidth=1096" alt="error">
 
                 <h2>Eco-Conscious & So Effective</h2>
                 <p>Exceptional Beauty</p>
                 <h3>SHOP NOW</h3>
 
         </div> 
-        <div>
+        <div onclick="Product2()">
             <img src="https://www.sephora.com/contentimages/homepage/080922/Homepage/RWD/2022-08-18-hp-slide-aug-hair-mbc-us-ca-rwd-slice-NO%20CARETS.jpeg?imwidth=1096" alt="error">
     
                 <h2>Shine On, Healthy Hair</h2>
@@ -282,3 +318,4 @@
 </html>
 <script type="module" src="./Footer/footer2.js"></script>
 <script src="./Footer/footer3.js"></script>
+<script src="./index.js"></script>

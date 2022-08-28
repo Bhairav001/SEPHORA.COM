@@ -3,7 +3,7 @@ body{
    
 }
         #eco{
-    height: 600px;
+    height: auto;
     width: 100%;
     display: flex;
 }
@@ -46,9 +46,10 @@ body{
 }
 
 #just{
-    height: 300px;
+    height: auto;
     width: 100%;
     /* border: 1px solid red; */
+  
     display: flex;
     text-align: center;
 }
@@ -72,6 +73,7 @@ margin-bottom: 40px;
 font-size: 14px;
 }
 #choose{
+    margin-top: 20px;
    height: 300px;
     width: 100%;
     /* border: 1px solid red; */

@@ -35,7 +35,7 @@ function getLoginData(event){
          alert("You are succesfully Sign in.")
         //  SignIn_Data.push(LogindataObj)
          localStorage.setItem("SignIn",JSON.stringify(elem))
-         window.location.href = ""
+         window.location.href = "../index.html"
          return ;
       }
       

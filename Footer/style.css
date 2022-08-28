@@ -1,4 +1,4 @@
-*{
+/* *:not(section){
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -8,9 +8,17 @@
     border-style: solid;
     border-color: currentColor;
     box-sizing: border-box;
-}
+} */
 
 #M-footer{
+    font-family: Arial, Helvetica, sans-serif;
+   
+    margin-top: 30px;
+    text-decoration: none;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentColor;
+    box-sizing: border-box;
     line-height: 1.25;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);

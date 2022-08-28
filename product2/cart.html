@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../Footer/style.css">
+    <script src="https://kit.fontawesome.com/cddbab1672.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Payment/top_navBar.css">
     <style>
          *{
             font-family: Arial, Helvetica, sans-serif;
@@ -18,6 +21,7 @@
             grid-template-rows: auto;
             gap: 30px;
             margin-right: 100px;
+            padding: 12px;
             /* border: 1px solid red; */
         }
         #container>div{
@@ -25,13 +29,13 @@
 
         }
       
-        img{
+       #img{
             width: 100%;
         }
-        p{
+        /* p{
             font-size: 14px;
             padding-left: 20px;
-        }
+        } */
         #pricebox{
             display: flex;
             /* border: 1px solid red; */
@@ -58,8 +62,18 @@
             color: white;
         }
 
-
-    
+        #Button12{
+            text-align: center;
+            font-size: 20px;
+            width: 30%;
+            margin: auto;
+            padding: 10px;
+            border-radius: 9999px;
+            color: black;
+        }
+        #Button12 a{
+            color: black;
+        }
       
         input[type="password"]{
             width: 100%;
@@ -93,11 +107,13 @@
         #sidebar{
         padding: 10px;
         /* border: 1px solid red; */
-        width: 60%;
+        width: 30%;
         border-right: 2px solid;
        }
-      
-
+      #Button12{
+        border: 2px solid black;
+      }
+       
          /* Medium screens */
         @media only screen and (min-width: 421px) and (max-width: 780px) {
             #container{
@@ -119,6 +135,40 @@
     </style>
 </head>
 <body>
+    <div id="top_img">
+        <p><strong>Take 50% off++</strong> Oh snap! Get major savings on your favorite beauty. Plus, free shipping on all orders <br> with code <strong> FREESHIP. Shop Now ▸</strong></p>
+        <img src="https://www.sephora.com/contentimages/homepage/081721/Homepage/DesktopMweb/2021-08-29-hp-top-banner-project-kickball-d-us-slice.jpeg?imwidth=612" alt="top_img">
+    </div>
+    <div id="search">
+        <div id="logo"><img src="https://www.sephora.com/img/ufe/logo.svg" alt=""></div>
+        <div id="box"><input type="text" class="icon" placeholder="Search"></div>
+        <div id="community"> 
+            <div><img src="https://www.sephora.com/img/ufe/icons/stores.svg" alt=""><p><strong>Stores & Services</strong> <br> Choose Your Store</p></div>
+            <div><img src="https://www.sephora.com/img/ufe/icons/community.svg" alt=""><p>Community</p></div>
+            <div id="signin"><a href="#"> <img src="https://www.sephora.com/img/ufe/icons/me-active.svg" alt=""><p>Sign In</p></a></div>
+            
+            <div id="cart">
+                <div><a href="#"><img style="height: 40px; width: 40px;" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/56/left-speech-bubble_1f5e8.png" alt="chat"></a></div>
+                <div><a href="#"><img src="https://cdn-icons-png.flaticon.com/32/1216/1216575.png" alt="heart"></a></div>
+                <div><a href="#"><img  src="https://cdn-icons-png.flaticon.com/32/481/481383.png" alt="basket"></a></div>
+            </div>
+
+        </div>
+    </div>
+    <div id="black_nav">
+        <div><a href="#"> New</a></div>
+        <div> <a href="#">Brands</a> </div>
+        <div><a href="#"> Makeup</a></div>
+        <div><a href="#"> Skincare</a></div>
+        <div><a href="#"> Hair</a></div>
+        <div><a href="#"> Fragrance</a></div>
+        <div><a href="#"> Tools & Brushes</a></div>
+        <div><a href="#"> Bath & Body</a></div>
+        <div><a href="#"> Mini Size</a></div>
+        <div><a href="#"> Gifts</a></div>
+        <div><a href="#"> Beauty Under $20</a></div>
+        <div><a href="#"> Sale & Offers</a></div>
+    </div>
     <div id="king">
         <div id="sidebar">
             <h3>Quizzes & Buying Guides</h3>
@@ -163,8 +213,14 @@
            <p>Healthier Hair Now</p>
         </div>
         <div id="container"></div>
+        
     </div>
+    <div id="Button12">
+        <a href="../Payment/cart.html">Add To Cart</a>
+    </div>
+<div id="footer">
 
+</div>
 
 </body>
 </html>
@@ -287,3 +343,5 @@
     //     window.location.href = "checkout.html";
     // }
 </script>
+<script type="module" src="../Footer/footer2.js"></script>
+<script src="../Footer/footer3.js"></script>
